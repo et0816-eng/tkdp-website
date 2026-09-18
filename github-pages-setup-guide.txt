@@ -1,0 +1,89 @@
+TKDP Website — GitHub Pages Setup Guide
+=========================================
+(Replaces the earlier Cloudflare Pages plan — see "WHY WE SWITCHED FROM
+CLOUDFLARE" below. Resume from the step matching what you've already done.)
+
+CURRENT STATE (as of 2026-09-18)
+---------------------------------
+- Domain: tkdp.co.jp
+  - Registered / DNS managed at: Value Domain (nameservers ns1/ns2.value-domain.com)
+    — this stays exactly as-is. No nameserver change, ever.
+  - Email: Google Workspace (MX records at Value Domain) — this MUST keep
+    working, and this plan never touches those records.
+  - No other DNS records exist yet (no SPF/DKIM/DMARC TXT, no other CNAMEs).
+- Site files (index.html, css/, js/) live in this project folder and were
+  previously zipped as tkdp-website.zip for the (now abandoned) Cloudflare
+  Direct Upload.
+- Goal: make https://www.tkdp.co.jp show this site, without touching
+  info@tkdp.co.jp email in any way.
+
+WHY WE SWITCHED FROM CLOUDFLARE
+---------------------------------
+The Cloudflare Pages plan required moving tkdp.co.jp's nameservers from
+Value Domain to Cloudflare, which meant recreating all DNS records
+(including the 6 MX records) on Cloudflare's side before switching, with
+a real risk of a mistake or propagation delay breaking mail. GitHub Pages
+supports custom domains via a single CNAME record added at the existing
+DNS host — Value Domain stays authoritative for everything, MX records
+are never re-entered anywhere, so there's nothing to break email with.
+
+TRADE-OFF TO ACCEPT
+---------------------
+- Free GitHub accounts can only serve Pages from a PUBLIC repository
+  (private repo Pages needs a paid GitHub plan). The site has no secrets
+  in it, so this is fine, but the source (including wording.txt) will be
+  publicly visible on GitHub.
+
+STEP-BY-STEP
+------------
+1. Create a new GitHub repository (e.g. "tkdp-website"). Public, since
+   Pages needs that on a free account.
+
+2. Push index.html, css/, and js/ from this project folder to that
+   repo's default branch (root of the repo, not a subfolder — GitHub
+   Pages looks for index.html at the root by default).
+
+3. In the repo: Settings > Pages.
+   - Source: Deploy from a branch.
+   - Branch: main (or whichever default branch), folder: / (root).
+   - Save.
+   - GitHub will publish to https://<github-username>.github.io/tkdp-website/
+     first — that's expected and temporary.
+
+4. Still on the Settings > Pages screen, under "Custom domain", enter:
+       www.tkdp.co.jp
+   Save. This makes GitHub add a CNAME file to the repo root and start
+   checking DNS.
+
+5. Log into Value Domain's control panel and add one DNS record:
+       Type:  CNAME
+       Name:  www
+       Value: <github-username>.github.io
+   (Use the account/organization name that owns the repo, not the repo
+   name.) Do NOT touch the existing MX records — leave them exactly as
+   they are.
+
+6. Wait for DNS propagation (usually well under an hour). Back on
+   Settings > Pages, GitHub should show the custom domain as verified
+   with a green check, and offer "Enforce HTTPS" — enable it once it's
+   available (GitHub provisions the certificate automatically; this can
+   take a few extra minutes after DNS verifies).
+   -> Once verified, double-check email still works (send/receive a
+      test message to info@tkdp.co.jp) — should be unaffected since MX
+      records were never touched, but confirm anyway.
+
+7. Verify https://www.tkdp.co.jp loads the site correctly (check both
+   language toggle and mobile view).
+
+NOTES / DECISIONS MADE
+------------------------
+- Decided to use www.tkdp.co.jp only (not the bare apex domain) — no
+  need to set up apex/root A records or a redirect.
+- tkdp-website.zip and the Cloudflare Pages/Worker project
+  ("tkdpwebsite") are no longer part of the plan and can be ignored or
+  deleted once GitHub Pages is live.
+- wording.txt in this project folder is the editable source of truth
+  for all bilingual site text; edits there get manually reflected into
+  index.html by Claude on request, then pushed to the GitHub repo to
+  redeploy (GitHub Pages auto-rebuilds on every push to the branch it's
+  configured to serve).

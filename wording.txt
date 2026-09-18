@@ -1,0 +1,247 @@
+# TKDP Website Wording (Japanese / English)
+#
+# HOW TO USE:
+# - Edit the text after "JA:" and "EN:" for any item you want to change.
+# - Do NOT change the [id] lines — they are used to put the new wording back into the HTML.
+# - Keep JA and EN as separate lines even if you only change one of them.
+# - When you're done, tell Claude to reflect the changes into index.html.
+
+# ============================================================
+# META (browser tab title / search engine description)
+# ============================================================
+
+[meta.title]
+JA: 合同会社タカダプランニング
+EN: TAKADA Planning LLC
+
+[meta.description]
+JA: タカダプランニングはCIO/CDO支援、ITロードマップ策定、プロジェクト・プログラムマネジメント支援を提供します。
+EN: TAKADA Planning provides IT & digital consulting: fractional CIO/CDO support, IT roadmap planning, and project/program management support.
+
+# ============================================================
+# HEADER
+# ============================================================
+
+[header.logo]
+JA: タカダプランニング
+EN: TAKADA Planning
+
+[nav.services]
+JA: サービス
+EN: Services
+
+[nav.about]
+JA: 会社概要
+EN: Company
+
+[nav.founder]
+JA: 代表紹介
+EN: Founder
+
+[nav.contact]
+JA: お問い合わせ
+EN: Contact
+
+# ============================================================
+# HERO
+# ============================================================
+
+[hero.eyebrow]
+JA: IT・デジタルコンサルティング
+EN: IT & Digital Consulting
+
+[hero.h1]
+JA: デジタルの真の価値とは
+EN: Digital that provides real value.
+
+[hero.lead]
+JA: タカダプランニングは、経営層のパートナーとして、CIO/CDO支援・ITロードマップ策定・プロジェクト・プログラムマネジメント支援を通じて、IT・デジタル戦略を確かな成果へとつなげます。
+EN: TAKADA Planning partners with executive leadership to turn IT and digital strategy into results — through fractional CIO/CDO support, IT roadmap planning, and project & program management.
+
+[hero.cta.primary]
+JA: お問い合わせ
+EN: Get in Touch
+
+[hero.cta.ghost]
+JA: サービスを見る
+EN: View Services
+
+# ============================================================
+# SERVICES
+# ============================================================
+
+[services.title]
+JA: サービス
+EN: Services
+
+[services.lead]
+JA: 以下は提供サービスの一例です。お客様の状況に応じて内容は個別にカスタマイズします。
+EN: The following are representative examples of our services. Scope and content are tailored to each client's situation.
+
+[services.card01.title]
+JA: CIO/CDO支援
+EN: Fractional CIO/CDO Support
+
+[services.card01.body]
+JA: 経営層の一員として、IT・デジタル戦略の策定と実行を支援します。
+EN: Acting as an extension of your leadership team to shape and drive IT and digital strategy.
+
+[services.card02.title]
+JA: ITロードマップ策定
+EN: IT Roadmap Planning
+
+[services.card02.body]
+JA: 事業戦略と整合したITロードマップを策定し、投資の優先順位を明確にします。
+EN: Building IT roadmaps aligned with business strategy and clarifying investment priorities.
+
+[services.card03.title]
+JA: プロジェクト・プログラムマネジメント支援
+EN: Project & Program Management Support
+
+[services.card03.body]
+JA: 大規模プロジェクト・プログラムの計画、実行、ガバナンスを支援します。
+EN: Supporting the planning, execution, and governance of large-scale projects and programs.
+
+[services.card04.title]
+JA: ITガバナンス・PMO構築支援
+EN: IT Governance & PMO Setup
+
+[services.card04.body]
+JA: 持続可能なITガバナンス体制とPMOの構築を支援します。
+EN: Helping establish sustainable IT governance structures and PMOs.
+
+[services.card05.title]
+JA: ベンダー選定・交渉支援
+EN: Vendor Selection & Negotiation Support
+
+[services.card05.body]
+JA: RFP作成からベンダー選定、契約交渉までを支援します。
+EN: Supporting RFP development, vendor selection, and contract negotiation.
+
+[services.card06.title]
+JA: DX戦略策定支援
+EN: DX Strategy Formulation
+
+[services.card06.body]
+JA: 業界動向を踏まえた実行可能なDX戦略の策定を支援します。
+EN: Formulating actionable digital transformation strategies grounded in industry trends.
+
+# ============================================================
+# ABOUT / COMPANY
+# ============================================================
+
+[about.title]
+JA: 会社概要
+EN: Company
+
+[about.row.companyName.label]
+JA: 会社名
+EN: Company Name
+
+[about.row.companyName.value]
+JA: 合同会社タカダプランニング
+EN: TAKADA Planning LLC
+
+[about.row.founded.label]
+JA: 設立
+EN: Founded
+
+[about.row.founded.value]
+JA: 2026年4月
+EN: April 2026
+
+[about.row.representative.label]
+JA: 代表
+EN: Representative
+
+[about.row.representative.value]
+JA: 代表社員 髙田 栄一
+EN: Eiichi Takada, Representative Member (CEO)
+
+[about.row.business.label]
+JA: 事業内容
+EN: Business
+
+[about.row.business.value]
+JA: IT・デジタルコンサルティング（CIO/CDO支援、ITロードマップ策定、プロジェクト・プログラムマネジメント支援 他）
+EN: IT & digital consulting (fractional CIO/CDO support, IT roadmap planning, project & program management support, and more)
+
+[about.row.email.label]
+JA: メール
+EN: Email
+
+# ============================================================
+# FOUNDER
+# ============================================================
+
+[founder.title]
+JA: 代表紹介
+EN: Founder
+
+[founder.name]
+JA: 髙田 栄一
+EN: Eiichi Takada
+
+[founder.jobtitle]
+JA: 代表社員 / 合同会社タカダプランニング
+EN: Representative Member (CEO), TAKADA Planning LLC
+
+[founder.bio]
+JA: システム開発、IT・ビジネスコンサルティング、IT新規ビジネスの立ち上げと運営、大規模組織のCIO、CTOなど、30年以上に渡りデジタル活用に携わってきました。アクセンチュア、PwC、Avanade、また日系大手情報サービス企業でのマジメント経験を活かし、AI時代の変革に向き合う企業を直接支援するため、タカダプランニングを設立しました。
+EN: For 30+ years, I've lived digital transformation from every angle — building systems, consulting on IT and business strategy, launching and running new IT ventures, and leading as CIO and CTO for large-scale organizations. Drawing on that experience — forged at Accenture, PwC, Avanade, and a major Japanese information services company — I founded TAKADA Planning to stand shoulder-to-shoulder with the companies stepping into the AI era. 
+
+[timeline.item1.period]
+JA: 2026 –
+EN: 2026 – Present
+
+[timeline.item1.company]
+JA: タカダプランニング
+EN: TAKADA Planning
+
+[timeline.item1.role]
+JA: 代表社員
+EN: Representative Member (CEO)
+
+[timeline.item2.role]
+JA: 常務執行役員 CTO
+EN: Managing Executive Officer, CTO
+
+[timeline.item3.role]
+JA: エグゼクティブ、Japan COO
+EN: Executive, Japan COO
+
+[timeline.item4.role]
+JA: パートナー、Japan CIO
+EN: Partner, Japan CIO
+
+[timeline.item5.role]
+JA: シニアディレクター / パートナー
+EN: Senior Director / Partner
+
+[timeline.item6.school]
+JA: 九州大学
+EN: Kyushu University
+
+[timeline.item6.degree]
+JA: 経済学部
+EN: B.A. Economics
+
+# ============================================================
+# CONTACT
+# ============================================================
+
+[contact.title]
+JA: お問い合わせ
+EN: Contact
+
+[contact.lead]
+JA: IT・デジタル戦略、プロジェクト推進に関するご相談は、お気軽にメールでお問い合わせください。
+EN: For inquiries about IT/digital strategy or project delivery, please feel free to reach out by email.
+
+# ============================================================
+# FOOTER
+# ============================================================
+
+[footer.company]
+JA: 合同会社タカダプランニング
+EN: TAKADA Planning LLC
