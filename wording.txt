@@ -51,7 +51,7 @@ JA: IT・デジタルコンサルティング
 EN: IT & Digital Consulting
 
 [hero.h1]
-JA: デジタルの真の価値とは
+JA: デジタルの真の価値を
 EN: Digital that provides real value.
 
 [hero.lead]
@@ -147,8 +147,8 @@ JA: 設立
 EN: Founded
 
 [about.row.founded.value]
-JA: 2026年4月
-EN: April 2026
+JA: 2020年10月
+EN: October 2020
 
 [about.row.representative.label]
 JA: 代表
@@ -187,7 +187,7 @@ JA: 代表社員 / 合同会社タカダプランニング
 EN: Representative Member (CEO), TAKADA Planning LLC
 
 [founder.bio]
-JA: システム開発、IT・ビジネスコンサルティング、IT新規ビジネスの立ち上げと運営、大規模組織のCIO、CTOなど、30年以上に渡りデジタル活用に携わってきました。アクセンチュア、PwC、Avanade、また日系大手情報サービス企業でのマジメント経験を活かし、AI時代の変革に向き合う企業を直接支援するため、タカダプランニングを設立しました。
+JA: システム開発、IT・ビジネスコンサルティング、IT新規ビジネスの立ち上げと運営、大規模組織のCIO、CTOなど、30年以上に渡りデジタル活用に携わってきました。アクセンチュア、PwC、Avanade、また日系大手情報サービス企業でのマジメント経験を活かし、AI時代の変革に向き合う企業を直接支援します。
 EN: For 30+ years, I've lived digital transformation from every angle — building systems, consulting on IT and business strategy, launching and running new IT ventures, and leading as CIO and CTO for large-scale organizations. Drawing on that experience — forged at Accenture, PwC, Avanade, and a major Japanese information services company — I founded TAKADA Planning to stand shoulder-to-shoulder with the companies stepping into the AI era. 
 
 [timeline.item1.period]
@@ -195,28 +195,64 @@ JA: 2026 –
 EN: 2026 – Present
 
 [timeline.item1.company]
-JA: タカダプランニング
-EN: TAKADA Planning
+JA: 合同会社タカダプランニング
+EN: TAKADA Planning LLC
 
 [timeline.item1.role]
 JA: 代表社員
 EN: Representative Member (CEO)
 
+[timeline.item2.period]
+JA: 2023 – 2026
+EN: 2023 – 2026
+
+[timeline.item2.company]
+JA: 株式会社ミロク情報サービス
+EN: Miroku Jyoho Service
+
 [timeline.item2.role]
-JA: 常務執行役員 CTO
+JA: 取締役常務執行役員 製品開発・サポート本部長 CTO
 EN: Managing Executive Officer, CTO
+
+[timeline.item3.period]
+JA: 2020 – 2023
+EN: 2020 – 2023
+
+[timeline.item3.company]
+JA: アバナード株式会社
+EN: Avanade
 
 [timeline.item3.role]
 JA: エグゼクティブ、Japan COO
 EN: Executive, Japan COO
 
+[timeline.item4.period]
+JA: 2013 – 2020
+EN: 2013 – 2020
+
+[timeline.item4.company]
+JA: PwC Japan LLC
+EN: PwC
+
 [timeline.item4.role]
 JA: パートナー、Japan CIO
 EN: Partner, Japan CIO
 
+[timeline.item5.period]
+JA: 1990 – 2013
+EN: 1990 – 2013
+
+[timeline.item5.company]
+JA: アクセンチュア株式会社 
+EN: Accenture
+
 [timeline.item5.role]
 JA: シニアディレクター / パートナー
 EN: Senior Director / Partner
+
+[timeline.item6.period]
+JA: 1990
+EN: 1990
 
 [timeline.item6.school]
 JA: 九州大学
